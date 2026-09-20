@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewired Tech Services | Connect & Reviews</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Color scheme matching rewiredwireless.com */
+    :root {
+      --primary-blue: #0014FF;
+      --primary-blue-hover: #000FBF;
+      --bg-white: #FFFFFF;
+      --bg-light-gray: #F9F9F9;
+      --text-dark: #222222;
+      --text-muted: #555555;
+      --border-color: #EAEAEA;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-light-gray);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+
+    .links-container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    /* Logo & Header Profile */
+    .brand-header {
+      margin-bottom: 25px;
+    }
+
+    .brand-header img {
+      max-height: 75px;
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    .brand-header h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .brand-header p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 5px;
+    }
+
+    /* Links Stack */
+    .links-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .link-card {
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+      text-decoration: none;
+      padding: 16px 20px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      transition: all 0.25s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary-blue);
+      box-shadow: 0 6px 18px rgba(0, 20, 255, 0.1);
+    }
+
+    .link-card .left-content {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .link-card i.icon {
+      font-size: 1.3rem;
+      width: 24px;
+      text-align: center;
+      color: var(--primary-blue);
+    }
+
+    /* Primary Highlight Card for Top Review CTA */
+    .link-card.primary-card {
+      background-color: var(--primary-blue);
+      color: white;
+      border-color: var(--primary-blue);
+    }
+
+    .link-card.primary-card i.icon {
+      color: white !important;
+    }
+
+    .link-card.primary-card:hover {
+      background-color: var(--primary-blue-hover);
+    }
+
+    /* Custom Icon Colors */
+    .fa-google { color: #4285F4; }
+    .fa-yelp { color: #FF1A1A; }
+
+    footer {
+      margin-top: auto;
+      padding-top: 30px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="links-container">
+    
+    <!-- Logo & Business Intro -->
+    <div class="brand-header">
+      <img src="REWIRED BUSINESS LOGO.png" alt="Rewired Tech Services Logo">
+      <h1>Rewired Tech Services</h1>
+      <p><i class="fa-solid fa-car"></i> On-Site Mobile Device Repair</p>
+    </div>
+
+    <!-- Clickable Links List -->
+    <div class="links-stack">
+
+      <!-- 1. Leave a Google Review (Primary CTA) -->
+      <a href="https://g.page/r/CecSfchDYB-EEAE/review" target="_blank" class="link-card primary-card">
+        <div class="left-content">
+          <i class="fa-brands fa-google icon"></i>
+          <span>Leave Us a Google Review</span>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <!-- 2. Read Our Google Reviews -->
+      <a href="https://share.google/SYTsAWsqRzFcuEiUQ" target="_blank" class="link-card">
+        <div class="left-content">
+          <i class="fa-brands fa-google icon"></i>
+          <span>Read Our Google Reviews</span>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <!-- 3. Yelp Profile (Read / Check Out Reviews) -->
+      <a href="https://yelp.to/4mcOT0sr" target="_blank" class="link-card">
+        <div class="left-content">
+          <i class="fa-brands fa-yelp icon"></i>
+          <span>Check Us Out on Yelp</span>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <!-- 4. Main Website -->
+      <a href="https://rewiredwireless.com/" class="link-card">
+        <div class="left-content">
+          <i class="fa-solid fa-globe icon"></i>
+          <span>Visit Main Website</span>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <!-- 5. Quick Phone Call -->
+      <a href="tel:5712598107" class="link-card">
+        <div class="left-content">
+          <i class="fa-solid fa-phone icon"></i>
+          <span>Call / Text (571) 259-8107</span>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <!-- 6. Request Quote Form -->
+      <a href="https://rewiredwireless.com/#quote" class="link-card">
+        <div class="left-content">
+          <i class="fa-regular fa-comment-dots icon"></i>
+          <span>Get a Free Repair Estimate</span>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Rewired Tech Services</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
