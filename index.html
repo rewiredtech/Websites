@@ -104,7 +104,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      min-height: 44px; /* Optimal touch size */
+      min-height: 44px;
       border: none;
       font-family: inherit;
       font-size: 0.95rem;
@@ -625,6 +625,15 @@
       width: 20px;
     }
 
+    .location-details p a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .location-details p a:hover {
+      color: var(--primary-blue);
+    }
+
     .map-container {
       width: 100%;
       height: 350px;
@@ -673,7 +682,6 @@
 
     /* RESPONSIVE BREAKPOINTS */
 
-    /* Tablet & Medium Screens (< 992px) */
     @media (max-width: 992px) {
       .location-grid {
         grid-template-columns: 1fr;
@@ -681,7 +689,6 @@
       }
     }
 
-    /* Mobile Devices (< 768px) */
     @media (max-width: 768px) {
       .nav-container {
         flex-direction: column;
@@ -726,7 +733,6 @@
         padding: 22px 16px;
       }
 
-      /* Show sticky bottom button for quick calls on smartphones */
       .mobile-call-bar {
         display: flex;
         align-items: center;
@@ -735,11 +741,10 @@
       }
 
       body {
-        padding-bottom: 50px; /* Space for the mobile sticky bar */
+        padding-bottom: 50px;
       }
     }
 
-    /* Small Smartphone Screens (< 480px) */
     @media (max-width: 480px) {
       .hero-buttons {
         flex-direction: column;
@@ -760,7 +765,7 @@
 
   <!-- Top Announcement Bar -->
   <div class="top-banner">
-    <i class="fa-solid fa-car"></i> Fast On-Site Screen & Battery Replacements Available Delivered to Your Door!
+    <i class="fa-solid fa-car"></i> Fast On-Site Screen & Battery Replacements Delivered to Your Door!
   </div>
 
   <!-- Header / Nav -->
@@ -773,9 +778,9 @@
         <a href="#services">Services</a>
         <a href="#issues">Problems We Fix</a>
         <a href="#quote">Get a Quote</a>
-        <a href="#why-us">Why Choose Us</a>
+        <a href="links.html"><i class="fa-solid fa-star"></i> Links & Reviews</a>
         <a href="#location">Service Area</a>
-        <a href="tel:5714788303" class="cta-btn"><i class="fa-solid fa-phone"></i> (571) 478-8303</a>
+        <a href="tel:5712598107" class="cta-btn"><i class="fa-solid fa-phone"></i> (571) 259-8107</a>
       </nav>
     </div>
   </header>
@@ -790,7 +795,7 @@
       <p>Fast, honest, and affordable device repairs coming directly to you. Most repairs done right from our mobile vehicle in 30 minutes or less.</p>
       <div class="hero-buttons">
         <a href="#quote" class="cta-btn"><i class="fa-regular fa-comment-dots"></i> Request a Free Quote</a>
-        <a href="tel:5714788303" class="btn-secondary"><i class="fa-solid fa-mobile-screen"></i> Call Us Now</a>
+        <a href="tel:5712598107" class="btn-secondary"><i class="fa-solid fa-mobile-screen"></i> Call Us Now</a>
       </div>
     </div>
   </section>
@@ -846,7 +851,7 @@
           </ul>
         </div>
 
-        <!-- Console Repair (Replaced Motherboard) -->
+        <!-- Console Repair -->
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-gamepad"></i></div>
           <h3>Console Repairs</h3>
@@ -869,7 +874,7 @@
     </div>
     <div class="issues-grid">
       <div class="issue-item">
-        <i class="fa-solid fa-crack"></i>
+        <i class="fa-solid fa-mobile-screen-button"></i>
         <div>
           <h4>Cracked Screens</h4>
           <p>Shattered glass? We replace OLED and LCD screens with high-quality parts.</p>
@@ -985,7 +990,7 @@
     </div>
   </section>
 
-  <!-- Why Choose Us / Value Proposition -->
+  <!-- Why Choose Us -->
   <section id="why-us">
     <div class="section-title">
       <h2>Why Choose Rewired Tech Services?</h2>
@@ -1011,16 +1016,16 @@
     <div class="extra-banner-container">
       <h3>Not Sure What's Wrong?</h3>
       <p>If your device is acting up and you aren't sure why, just give us a call. We can help diagnose the issue and point you in the right direction.</p>
-      <a href="tel:5714788303" class="cta-btn"><i class="fa-solid fa-phone"></i> Call (571) 478-8303</a>
+      <a href="tel:5712598107" class="cta-btn"><i class="fa-solid fa-phone"></i> Call (571) 259-8107</a>
     </div>
   </div>
 
   <!-- Google Reviews Section -->
   <section class="reviews-section">
     <div class="reviews-container">
-      <h2>Check Out Our Reviews!</h2>
-      <p>We pride ourselves on 5-star service. See what our customers are saying.</p>
-      <a href="https://share.google/SYTsAWsqRzFcuEiUQ" target="_blank" class="btn-secondary"><i class="fa-brands fa-google"></i> Read Our Reviews</a>
+      <h2>Check Out Our Links & Reviews!</h2>
+      <p>We pride ourselves on 5-star service. Leave a review or check out our full links hub.</p>
+      <a href="links.html" class="btn-secondary"><i class="fa-solid fa-star"></i> View Links & Reviews Page</a>
     </div>
   </section>
 
@@ -1034,11 +1039,11 @@
         <div class="location-details">
           <h3>On-Site Mobile Repair Vehicle</h3>
           <p><i class="fa-solid fa-map-location-dot"></i> We come directly to you! Servicing the greater DMV area.</p>
-          <p><i class="fa-solid fa-phone"></i> (571) 478-8303</p>
-          <p><i class="fa-solid fa-envelope"></i> contact@rewiredtechservices.com</p>
+          <p><i class="fa-solid fa-phone"></i> (571) 259-8107</p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:support.rewired@gmail.com">support.rewired@gmail.com</a></p>
           <br>
           <h4>Service Hours</h4>
-          <p><i class="fa-regular fa-clock"></i> Monday - Friday: 08:00AM - 10:00 PM</p>
+          <p><i class="fa-regular fa-clock"></i> Monday - Friday: 08:00 AM - 10:00 PM</p>
           <p><i class="fa-regular fa-clock"></i> Saturday: 12:00 PM - 10:00 PM</p>
           <p><i class="fa-regular fa-clock"></i> Sunday: 04:00 PM - 10:00 PM</p>
           <br>
@@ -1050,7 +1055,6 @@
         
         <!-- Map Container -->
         <div class="map-container">
-          <!-- Google Maps Embed for Alexandria, VA / DMV General Area -->
           <iframe 
             src="https://maps.google.com/maps?q=Alexandria,%20VA&t=&z=10&ie=UTF8&iwloc=&output=embed" 
             allowfullscreen="" 
@@ -1068,13 +1072,12 @@
   </footer>
 
   <!-- Fixed Sticky Mobile Call Button -->
-  <a href="tel:5714788303" class="mobile-call-bar">
-    <i class="fa-solid fa-phone"></i> Call Now: (571) 478-8303
+  <a href="tel:5712598107" class="mobile-call-bar">
+    <i class="fa-solid fa-phone"></i> Call Now: (571) 259-8107
   </a>
 
   <!-- JavaScript for Form Logic -->
   <script>
-    // Show/Hide the "Other" text area in the quote form
     const repairIssueSelect = document.getElementById('repair-issue');
     const otherIssueContainer = document.getElementById('other-issue-container');
     const otherIssueDesc = document.getElementById('other-issue-desc');
@@ -1089,7 +1092,6 @@
       }
     });
 
-    // Form submission handling for Formspree
     const quoteForm = document.getElementById('quote-form');
     const formStatus = document.getElementById('form-status');
     const submitBtn = document.getElementById('submit-btn');
