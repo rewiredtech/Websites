@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Add a <url> block for every new article. Update <lastmod> when you change a page. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rewiredwireless.com/</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://rewiredwireless.com/blog/</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://rewiredwireless.com/blog/phone-wont-charge.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://rewiredwireless.com/blog/screen-repair-alexandria-va.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://rewiredwireless.com/blog/iphone-lcd-vs-oled-screen-replacement.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://rewiredwireless.com/blog/apple-store-vs-independent-vs-mobile-repair.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://rewiredwireless.com/blog/black-screen-phone-still-on.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://rewiredwireless.com/links.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+</urlset>

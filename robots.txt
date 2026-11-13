@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /blog/_template.html
+
+Sitemap: https://rewiredwireless.com/sitemap.xml

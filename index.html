@@ -3,1127 +3,827 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile Phone Repair in Alexandria, VA | Rewired</title>
-  <meta name="description" content="Rewired offers convenient on-site iPhone, Samsung, and Android phone repair in Alexandria, VA and the greater DMV area. Screen, battery, back glass, charging port, and camera repairs. Request a free quote.">
+  <title>On-Site Phone Repair in Alexandria, VA | Rewired Tech Services</title>
+  <meta name="description" content="Rewired comes to you for iPhone, Samsung and Android repair in Alexandria, VA and the DMV. Screens, batteries, back glass, charging ports and cameras. Open evenings and weekends. 60-day warranty. Free quotes.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Mobile Phone Repair in Alexandria, VA | Rewired">
-  <meta property="og:description" content="On-site iPhone, Samsung, and Android phone repair in Alexandria, VA and the greater DMV area. Request a free quote.">
+  <link rel="canonical" href="https://rewiredwireless.com/">
+  <meta name="theme-color" content="#0A0F2C">
+
+  <!-- Icons shown in browser tabs, phone home screens and Google results -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- How the site looks when the link is shared by text, Facebook, etc. -->
+  <meta property="og:title" content="On-Site Phone Repair in Alexandria, VA | Rewired">
+  <meta property="og:description" content="We come to your home, office or coffee shop. iPhone, Samsung & Android repair across the DMV. Free quotes, 60-day warranty.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rewiredwireless.com/">
-  <link rel="canonical" href="https://rewiredwireless.com/">
-  <!-- Google Fonts & Font Awesome Icons -->
+  <meta property="og:image" content="https://rewiredwireless.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Business details for Google (helps you show up in local search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Rewired Tech Services",
+    "alternateName": "Rewired",
+    "description": "On-site iPhone, Samsung, Android and laptop repair in Alexandria, VA and the greater DMV area.",
+    "url": "https://rewiredwireless.com/",
+    "logo": "https://rewiredwireless.com/icon-512.png",
+    "image": "https://rewiredwireless.com/og-image.jpg",
+    "telephone": "+1-571-259-8107",
+    "email": "support.rewired@gmail.com",
+    "priceRange": "$$",
+    "address": { "@type": "PostalAddress", "addressLocality": "Alexandria", "addressRegion": "VA", "addressCountry": "US" },
+    "areaServed": [
+      { "@type": "City", "name": "Alexandria, VA" },
+      { "@type": "AdministrativeArea", "name": "Washington, DC metropolitan area" }
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "16:00", "closes": "22:00" }
+    ],
+    "sameAs": [
+      "https://yelp.to/4mcOT0sr",
+      "https://share.google/SYTsAWsqRzFcuEiUQ"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    /* CSS Variables matching Rewired logo blue */
     :root {
-      --primary-blue: #0014FF;
-      --primary-blue-hover: #000FBF;
-      --bg-white: #FFFFFF;
-      --bg-light-gray: #F9F9F9;
-      --bg-accent-gray: #F0F2F5;
-      --text-dark: #222222;
-      --text-muted: #555555;
-      --border-color: #EAEAEA;
+      --blue: #0014FF;          /* exact logo blue */
+      --blue-dark: #000FBF;
+      --blue-soft: #EEF0FF;
+      --navy: #0A0F2C;
+      --navy-2: #121A45;
+      --ink: #11152B;
+      --muted: #5A6075;
+      --line: #E6E8F0;
+      --bg: #FFFFFF;
+      --bg-alt: #F6F7FB;
+      --green: #12B76A;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(10, 15, 44, .08);
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
     body {
-      font-family: 'Poppins', sans-serif;
-      color: var(--text-dark);
-      background-color: var(--bg-white);
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
       line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* Top Announcement Bar */
-    .top-banner {
-      background-color: var(--primary-blue);
-      color: white;
-      text-align: center;
-      padding: 8px 15px;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    /* Header / Navigation */
-    header {
-      background-color: var(--bg-white);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo-container img {
-      max-height: 60px;
-      width: auto;
-      display: block;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--text-dark);
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary-blue);
-    }
-
-    .cta-btn {
-      background-color: var(--primary-blue);
-      color: white !important;
-      padding: 10px 20px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease !important;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 44px;
-      border: none;
-      font-family: inherit;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .cta-btn:hover {
-      background-color: var(--primary-blue-hover) !important;
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 60px 20px;
-      background-color: var(--bg-white);
-      text-align: center;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .hero-content {
-      max-width: 850px;
-      margin: 0 auto;
-    }
-
-    .express-badge {
-      display: inline-block;
-      background-color: #F0F4FF;
-      color: var(--primary-blue);
-      border: 1px solid var(--primary-blue);
-      padding: 6px 16px;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 0.85rem;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 2.8rem);
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: var(--text-dark);
-      line-height: 1.25;
-    }
-
-    .hero h1 span {
-      color: var(--primary-blue);
-    }
-
-    .hero p {
-      font-size: clamp(1rem, 2.5vw, 1.15rem);
-      color: var(--text-muted);
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn-secondary {
-      border: 2px solid var(--primary-blue);
-      color: var(--primary-blue);
-      padding: 10px 22px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 44px;
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--primary-blue);
-      color: white;
-    }
-
-    /* Quick Info Bar */
-    .info-bar {
-      background-color: var(--bg-light-gray);
-      padding: 20px;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .info-bar-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 15px;
-      text-align: center;
-    }
-
-    .info-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .info-item i {
-      color: var(--primary-blue);
-      font-size: 1.3rem;
-    }
-
-    .info-item a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .info-item a:hover {
-      color: var(--primary-blue);
-    }
-
-    /* Section Styling */
-    section {
-      padding: 60px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .section-title h2 {
-      font-size: clamp(1.75rem, 4vw, 2.2rem);
-      color: var(--text-dark);
-      position: relative;
-      display: inline-block;
-    }
-
-    .section-title h2::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 4px;
-      background-color: var(--primary-blue);
-      margin: 10px auto 0;
-      border-radius: 2px;
-    }
-
-    .section-title p {
-      color: var(--text-muted);
-      margin-top: 10px;
-      font-size: 1rem;
-    }
-
-    /* Services Section */
-    .services-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 25px;
-    }
-
-    .service-card {
-      background-color: var(--bg-white);
-      border: 1px solid var(--border-color);
-      border-top: 4px solid var(--primary-blue);
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    }
-
-    .service-card.highlighted-card {
-      background-color: #F7F9FF;
-      border: 2px solid var(--primary-blue);
-    }
-
-    .card-badge {
-      align-self: flex-start;
-      background-color: var(--primary-blue);
-      color: white;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .service-icon {
-      font-size: 2.2rem;
-      color: var(--primary-blue);
-      margin-bottom: 15px;
-    }
-
-    .service-card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 12px;
-    }
-
-    .service-card p.desc {
-      color: var(--text-muted);
-      font-size: 0.92rem;
-      margin-bottom: 15px;
-    }
-
-    .service-card ul {
-      list-style: none;
-      margin-top: auto;
-    }
-
-    .service-card ul li {
-      margin-bottom: 8px;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.9rem;
-    }
-
-    .service-card ul li i {
-      color: var(--primary-blue);
-      font-size: 0.8rem;
-    }
-
-    /* Common Issues Grid */
-    .issues-section {
-      background-color: var(--bg-light-gray);
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .issues-grid {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .issue-item {
-      background: var(--bg-white);
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid var(--border-color);
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    .issue-item i {
-      color: var(--primary-blue);
-      font-size: 1.4rem;
-      margin-top: 3px;
-    }
-
-    .issue-item h4 {
-      font-size: 1rem;
-      margin-bottom: 4px;
-    }
-
-    .issue-item p {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-    }
-
-    /* Software & Tech Assistance Banner */
-    .software-section {
-      background-color: var(--bg-accent-gray);
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .software-content {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .software-content h3 {
-      font-size: clamp(1.4rem, 3.5vw, 1.8rem);
-      margin-bottom: 15px;
-    }
-
-    .software-content p {
-      color: var(--text-muted);
-      font-size: 1rem;
-      margin-bottom: 25px;
-    }
-
-    /* Quote Request Section */
-    .quote-section {
-      background-color: var(--bg-white);
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .quote-container {
-      max-width: 850px;
-      margin: 0 auto;
-    }
-
-    .quote-form-card {
-      background-color: var(--bg-light-gray);
-      padding: 35px;
-      border-radius: 12px;
-      border: 1px solid var(--border-color);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .form-group.full-width {
-      grid-column: span 2;
-    }
-
-    .form-group label {
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: var(--text-dark);
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 15px;
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      font-family: inherit;
-      font-size: 0.95rem;
-      color: var(--text-dark);
-      background-color: var(--bg-white);
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--primary-blue);
-      box-shadow: 0 0 0 3px rgba(0, 20, 255, 0.15);
-    }
-
-    .form-submit {
-      margin-top: 25px;
-      text-align: center;
-    }
-
-    .submit-btn {
-      width: 100%;
-      max-width: 320px;
-      padding: 14px 20px;
-      font-size: 1rem;
-    }
-
-    .form-status {
-      margin-top: 20px;
-      padding: 15px 20px;
-      border-radius: 8px;
-      font-weight: 500;
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    .form-status.success {
-      background-color: #E7F4E8;
-      color: #1E4620;
-      border: 1px solid #C3E6C5;
-    }
-
-    .form-status.error {
-      background-color: #FDF2F2;
-      color: #9B1C1C;
-      border: 1px solid #FBD5D5;
-    }
-
-    /* Value & Features Section */
-    .features-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-
-    .feature-box {
-      background-color: var(--bg-white);
-      border: 1px solid var(--border-color);
-      padding: 25px;
-      border-radius: 8px;
-    }
-
-    .feature-box h3 {
-      font-size: 1.25rem;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .feature-box h3 i {
-      color: var(--primary-blue);
-    }
-
-    .feature-box p {
-      color: var(--text-muted);
-      font-size: 0.92rem;
-    }
-
-    /* Extra Banner */
-    .extra-banner {
-      background-color: var(--bg-white);
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .extra-banner-container {
-      max-width: 800px;
-      margin: 0 auto;
-      border: 2px dashed var(--primary-blue);
-      padding: 30px 20px;
-      border-radius: 12px;
-      background-color: #F0F4FF;
-    }
-
-    .extra-banner h3 {
-      font-size: clamp(1.3rem, 3vw, 1.6rem);
-      margin-bottom: 10px;
-    }
-
-    .extra-banner p {
-      color: var(--text-muted);
-      margin-bottom: 20px;
-      font-size: 0.95rem;
-    }
-
-    /* Google Reviews Section */
-    .reviews-section {
-      background-color: var(--bg-light-gray);
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .reviews-container {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .reviews-container h2 {
-      font-size: clamp(1.6rem, 3.5vw, 2rem);
-      color: var(--text-dark);
-      margin-bottom: 10px;
-    }
-
-    .reviews-container p {
-      font-size: 1rem;
-      color: var(--text-muted);
-      margin-bottom: 25px;
-    }
-
-    /* Location & Map Section */
-    .location-section {
-      background-color: var(--bg-white);
-    }
-
-    .location-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .location-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .location-details h3 {
-      font-size: 1.7rem;
-      margin-bottom: 20px;
-    }
-
-    .location-details p {
-      margin-bottom: 15px;
-      font-size: 1rem;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .location-details p i {
-      color: var(--primary-blue);
-      font-size: 1.2rem;
-      width: 20px;
-    }
-
-    .location-details p a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .location-details p a:hover {
-      color: var(--primary-blue);
-    }
-
-    .map-container {
-      width: 100%;
-      height: 350px;
-      border-radius: 8px;
-      overflow: hidden;
-      border: 1px solid var(--border-color);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      min-height: 50px; padding: 0 24px; border-radius: 10px;
+      font-family: inherit; font-weight: 700; font-size: 1rem; line-height: 1; text-decoration: none;
+      border: 2px solid transparent; cursor: pointer;
+      transition: background .2s, color .2s, border-color .2s, transform .2s;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-primary:hover { background: var(--blue-dark); }
+    .btn-light { background: #fff; color: var(--navy); }
+    .btn-light:hover { background: var(--blue-soft); }
+    .btn-ghost { border-color: rgba(255,255,255,.35); color: #fff; }
+    .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+    .btn-outline { border-color: var(--blue); color: var(--blue); }
+    .btn-outline:hover { background: var(--blue); color: #fff; }
+    .btn-sm { min-height: 42px; padding: 0 16px; font-size: .92rem; }
+
+    /* ---------- Top bar ---------- */
+    .topbar { background: var(--blue); color: #fff; font-size: .85rem; font-weight: 600; }
+    .topbar .wrap { display: flex; justify-content: center; align-items: center; gap: 18px; padding-top: 8px; padding-bottom: 8px; flex-wrap: wrap; text-align: center; }
+    .status { display: inline-flex; align-items: center; gap: 8px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #9AA3FF; }
+    .dot.open { background: #4ADE80; box-shadow: 0 0 0 4px rgba(74,222,128,.25); }
+
+    /* ---------- Header ---------- */
+    header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand img { height: 40px; width: auto; }
+    .brand span { font-family: 'Jost', sans-serif; font-size: 1.45rem; letter-spacing: .2em; color: var(--blue); }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; font-weight: 600; font-size: .95rem; color: var(--ink); }
+    .nav-links a:hover { color: var(--blue); }
+    .nav-cta { display: flex; gap: 10px; align-items: center; }
+    .menu-btn, .icon-call { display: none; }
+
+    /* ---------- Hero ---------- */
+    .hero { background: radial-gradient(1000px 500px at 85% 10%, rgba(0,20,255,.55), transparent 60%), var(--navy); color: #fff; overflow: hidden; }
+    .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 50px; align-items: center; padding-top: 80px; padding-bottom: 90px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 99px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); font-size: .85rem; font-weight: 600; margin-bottom: 22px; }
+    .hero h1 { font-size: clamp(2.3rem, 5.4vw, 3.8rem); line-height: 1.08; font-weight: 800; letter-spacing: -.02em; margin-bottom: 20px; }
+    .hero h1 em { font-style: normal; color: #8C97FF; }
+    .hero p.lead { font-size: clamp(1.05rem, 2vw, 1.2rem); color: #C9CEEA; max-width: 560px; margin-bottom: 32px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
+    .hero-trust { display: flex; flex-wrap: wrap; gap: 14px 28px; list-style: none; font-weight: 600; font-size: .95rem; color: #E4E7FA; }
+    .hero-trust i { color: #8C97FF; margin-right: 8px; }
+
+    /* Phone illustration */
+    .phone-visual { position: relative; justify-self: center; }
+    .phone {
+      width: 290px; border-radius: 44px; padding: 12px; background: #1C2350;
+      box-shadow: 0 40px 80px rgba(0,0,0,.45), inset 0 0 0 2px rgba(255,255,255,.08);
+    }
+    .phone-screen { background: #F3F4FA; border-radius: 34px; padding: 46px 16px 24px; min-height: 500px; position: relative; color: var(--ink); }
+    .notch { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 96px; height: 26px; background: #1C2350; border-radius: 20px; }
+    .chat-head { display: flex; align-items: center; gap: 10px; padding-bottom: 14px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
+    .chat-head img { width: 34px; height: 34px; border-radius: 50%; background: #fff; padding: 5px; object-fit: contain; border: 1px solid var(--line); }
+    .chat-head b { display: block; font-size: .9rem; }
+    .chat-head small { color: var(--green); font-weight: 600; font-size: .75rem; }
+    .bubble { font-size: .86rem; padding: 10px 14px; border-radius: 18px; margin-bottom: 10px; max-width: 85%; line-height: 1.45; }
+    .bubble.me { background: var(--blue); color: #fff; margin-left: auto; border-bottom-right-radius: 6px; }
+    .bubble.them { background: #fff; border: 1px solid var(--line); border-bottom-left-radius: 6px; }
+    .float-card {
+      position: absolute; background: #fff; color: var(--ink); border-radius: 14px; padding: 12px 16px;
+      box-shadow: var(--shadow); display: flex; align-items: center; gap: 12px; font-size: .85rem; font-weight: 700;
+    }
+    .float-card i { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); font-size: 1rem; }
+    .float-card small { display: block; font-weight: 500; color: var(--muted); font-size: .75rem; }
+    .fc-1 { left: -64px; bottom: -22px; }
+    .fc-2 { right: -56px; top: -18px; }
+
+    /* ---------- Sections ---------- */
+    section { padding: 90px 0; }
+    .alt { background: var(--bg-alt); }
+    .head { max-width: 680px; margin: 0 auto 50px; text-align: center; }
+    .kicker { color: var(--blue); font-weight: 700; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+    .head h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); line-height: 1.15; letter-spacing: -.02em; margin-bottom: 14px; }
+    .head p { color: var(--muted); font-size: 1.05rem; }
+
+    /* Steps */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; counter-reset: s; }
+    .step { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; position: relative; }
+    .step::before { counter-increment: s; content: counter(s); position: absolute; top: 24px; right: 26px; font-size: 3rem; font-weight: 800; color: var(--blue-soft); line-height: 1; }
+    .step .ic { width: 52px; height: 52px; border-radius: 14px; background: var(--blue); color: #fff; display: grid; place-items: center; font-size: 1.3rem; margin-bottom: 18px; }
+    .step h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .step p { color: var(--muted); font-size: .95rem; }
+
+    /* Services */
+    .services { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 24px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s; }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .card.featured { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .card.featured p, .card.featured li { color: #C9CEEA; }
+    .tag { align-self: flex-start; background: var(--blue); color: #fff; font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 5px 10px; border-radius: 99px; margin-bottom: 18px; }
+    .card .ic { font-size: 2rem; color: var(--blue); margin-bottom: 16px; }
+    .card.featured .ic { color: #8C97FF; }
+    .card h3 { font-size: 1.35rem; margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: .95rem; margin-bottom: 18px; }
+    .card ul { list-style: none; margin-bottom: 24px; }
+    .card li { display: flex; gap: 10px; align-items: baseline; margin-bottom: 8px; font-size: .95rem; color: var(--muted); }
+    .card li i { color: var(--blue); font-size: .8rem; }
+    .card.featured li i { color: #8C97FF; }
+    .card .more { margin-top: auto; font-weight: 700; color: var(--blue); text-decoration: none; }
+    .card.featured .more { color: #fff; }
+    .card .more:hover { text-decoration: underline; }
+
+    /* Problems */
+    .problems { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .problem { display: flex; gap: 16px; align-items: flex-start; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+    .problem i { flex: none; width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); font-size: 1.15rem; }
+    .problem h3 { font-size: 1.05rem; margin-bottom: 4px; }
+    .problem p { font-size: .9rem; color: var(--muted); }
+
+    /* Why us */
+    .why { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .why div { padding: 6px; }
+    .why i { font-size: 1.6rem; color: var(--blue); margin-bottom: 14px; }
+    .why h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .why p { color: var(--muted); font-size: .93rem; }
+
+    /* Reviews band */
+    .reviews { background: var(--blue); color: #fff; padding: 70px 0; }
+    .reviews .wrap { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+    .stars { color: #FFD43B; font-size: 1.2rem; letter-spacing: 3px; margin-bottom: 10px; }
+    .reviews h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; margin-bottom: 8px; }
+    .reviews p { color: #DDE1FF; }
+    .reviews .btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .reviews .btn-light i.fa-google { color: #4285F4; }
+    .reviews .btn-light i.fa-yelp { color: #D32323; }
+
+    /* Quote */
+    .quote-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 40px; align-items: start; }
+    .quote-side h2 { font-size: clamp(1.8rem, 3.4vw, 2.4rem); line-height: 1.15; margin-bottom: 14px; letter-spacing: -.02em; }
+    .quote-side > p { color: var(--muted); margin-bottom: 28px; }
+    .contact-opt { display: flex; gap: 14px; align-items: center; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; margin-bottom: 12px; background: #fff; transition: border-color .2s; }
+    .contact-opt:hover { border-color: var(--blue); }
+    .contact-opt i { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); }
+    .contact-opt b { display: block; }
+    .contact-opt small { color: var(--muted); }
+    form.quote { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 34px; box-shadow: var(--shadow); }
+    .fgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { font-weight: 600; font-size: .88rem; }
+    .field input, .field select, .field textarea {
+      width: 100%; padding: 13px 14px; border: 1px solid #D5D8E3; border-radius: 10px;
+      font: inherit; font-size: 1rem; color: var(--ink); background: #fff;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px rgba(0,20,255,.12); }
+    .hp { position: absolute; left: -9999px; }
+    form.quote .btn { width: 100%; margin-top: 22px; }
+    .fine { text-align: center; color: var(--muted); font-size: .82rem; margin-top: 12px; }
+    .form-status { margin-top: 16px; padding: 14px 16px; border-radius: 10px; font-weight: 600; font-size: .95rem; text-align: center; display: none; }
+    .form-status.success { display: block; background: #E8F7EE; color: #11603A; }
+    .form-status.error { display: block; background: #FDECEC; color: #9B1C1C; }
+
+    /* Phone tips */
+    .tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 360px)); justify-content: center; gap: 24px; }
+    .tip { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; text-decoration: none; transition: transform .25s, box-shadow .25s; }
+    .tip:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .tip .cat { color: var(--blue); font-weight: 700; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 10px; }
+    .tip h3 { font-size: 1.15rem; line-height: 1.3; margin-bottom: 10px; }
+    .tip p { color: var(--muted); font-size: .95rem; margin-bottom: 18px; }
+    .tip .read { margin-top: auto; font-weight: 700; color: var(--blue); }
+
+    /* FAQ */
+    .faq { max-width: 820px; margin: 0 auto; }
+    .faq details { background: #fff; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; }
+    .faq summary { cursor: pointer; list-style: none; padding: 20px 22px; font-weight: 700; display: flex; justify-content: space-between; gap: 16px; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: '+'; color: var(--blue); font-size: 1.4rem; line-height: 1; }
+    .faq details[open] summary::after { content: '–'; }
+    .faq details p { padding: 0 22px 20px; color: var(--muted); }
+
+    /* Area */
+    .area-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: stretch; }
+    .area-info h2 { font-size: clamp(1.8rem, 3.4vw, 2.4rem); line-height: 1.15; margin-bottom: 14px; letter-spacing: -.02em; }
+    .area-info > p { color: var(--muted); margin-bottom: 22px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .chips span { background: var(--blue-soft); color: var(--blue); font-weight: 600; font-size: .85rem; padding: 6px 12px; border-radius: 99px; }
+    .hours { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .hours td { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .hours td:last-child { text-align: right; font-weight: 600; }
+    .hours tr.today td { color: var(--blue); font-weight: 700; }
+    .map { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); min-height: 380px; }
+    .map iframe { width: 100%; height: 100%; min-height: 380px; border: 0; display: block; }
+
+    /* Final CTA */
+    .final { background: var(--navy); color: #fff; text-align: center; padding: 80px 0; }
+    .final h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); margin-bottom: 12px; letter-spacing: -.02em; }
+    .final p { color: #C9CEEA; margin-bottom: 30px; }
+    .final .hero-actions { justify-content: center; margin: 0; }
 
     /* Footer */
-    footer {
-      background-color: var(--text-dark);
-      color: white;
-      text-align: center;
-      padding: 25px 20px;
+    footer { background: #060920; color: #A9AFCC; padding: 56px 0 30px; font-size: .93rem; }
+    .foot { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; margin-bottom: 36px; }
+    .foot h4 { color: #fff; margin-bottom: 14px; font-size: 1rem; }
+    .foot ul { list-style: none; }
+    .foot li { margin-bottom: 8px; }
+    .foot a { text-decoration: none; }
+    .foot a:hover { color: #fff; }
+    .foot .brand span { color: #fff; }
+    .foot .brand { margin-bottom: 14px; }
+    .copy { border-top: 1px solid rgba(255,255,255,.08); padding-top: 22px; font-size: .82rem; }
+
+    /* Mobile sticky action bar */
+    .mbar { display: none; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .hero .wrap { grid-template-columns: 1fr; }
+      .phone-visual { display: none; }
+      .services { grid-template-columns: 1fr 1fr; }
+      .services .featured { grid-column: 1 / -1; }
+      .problems { grid-template-columns: 1fr 1fr; }
+      .why { grid-template-columns: 1fr 1fr; }
+      .quote-grid, .area-grid { grid-template-columns: 1fr; }
     }
-
-    footer p {
-      font-size: 0.88rem;
-      color: #ccc;
+    @media (max-width: 860px) {
+      .nav-links, .nav-cta .btn { display: none; }
+      .menu-btn, .icon-call { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); font-size: 1.1rem; cursor: pointer; text-decoration: none; }
+      .icon-call { background: var(--blue); color: #fff; border-color: var(--blue); }
+      .nav-links.open { display: flex; flex-direction: column; align-items: stretch; gap: 0; position: absolute; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--line); padding: 8px 20px 16px; box-shadow: var(--shadow); }
+      .nav-links.open a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); }
     }
-
-    /* Fixed Sticky Mobile Call Button */
-    .mobile-call-bar {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: var(--primary-blue);
-      color: white;
-      text-align: center;
-      padding: 12px;
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      z-index: 9999;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
-    }
-
-    /* RESPONSIVE BREAKPOINTS */
-
-    @media (max-width: 992px) {
-      .location-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    @media (max-width: 640px) {
+      section { padding: 64px 0; }
+      .hero .wrap { padding-top: 48px; padding-bottom: 56px; }
+      .hero-actions .btn { width: 100%; }
+      .steps, .services, .problems, .why, .fgrid, .foot { grid-template-columns: 1fr; }
+      form.quote { padding: 22px 18px; }
+      .reviews .btns, .reviews .btns .btn { width: 100%; }
+      .topbar .hide-sm { display: none; }
+      .mbar {
+        display: grid; grid-template-columns: 1fr 1fr 1.3fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 200;
+        background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(10,15,44,.08);
+        padding: 8px 8px calc(8px + env(safe-area-inset-bottom)); gap: 8px;
       }
-    }
-
-    @media (max-width: 768px) {
-      .nav-container {
-        flex-direction: column;
-        gap: 12px;
-        padding: 10px 15px;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        width: 100%;
-      }
-
-      .nav-links a {
-        font-size: 0.88rem;
-      }
-
-      .nav-links .cta-btn {
-        width: 100%;
-      }
-
-      section {
-        padding: 45px 15px;
-      }
-
-      .info-bar-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .form-group.full-width {
-        grid-column: span 1;
-      }
-
-      .quote-form-card {
-        padding: 22px 16px;
-      }
-
-      .mobile-call-bar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-
-      body {
-        padding-bottom: 50px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .hero-buttons a {
-        width: 100%;
-      }
-
-      .service-card, .feature-box, .issue-item {
-        padding: 18px;
-      }
+      .mbar a { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: .95rem; border: 1px solid var(--line); color: var(--ink); }
+      .mbar a.primary { background: var(--blue); color: #fff; border-color: var(--blue); }
+      body { padding-bottom: 76px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-banner">
-    <i class="fa-solid fa-car"></i> Fast On-Site Screen & Battery Replacements Delivered to Your Door!
+  <!-- ===== Top bar ===== -->
+  <div class="topbar">
+    <div class="wrap">
+      <span class="status"><span class="dot" id="status-dot"></span><span id="status-text">Evenings &amp; weekends available</span></span>
+      <span class="hide-sm"><i class="fa-solid fa-van-shuttle"></i> We come to your home, office or coffee shop</span>
+    </div>
   </div>
 
-  <!-- Header / Nav -->
+  <!-- ===== Header ===== -->
   <header>
-    <div class="nav-container">
-      <div class="logo-container">
-        <img src="REWIRED BUSINESS LOGO.png" alt="Rewired Tech Services Logo">
+    <div class="wrap nav">
+      <a href="#top" class="brand" aria-label="Rewired home">
+        <img src="mark.png" alt="" width="45" height="40">
+        <span>REWIRED</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="blog/">Phone tips</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#area">Service area</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+15712598107" class="btn btn-outline btn-sm"><i class="fa-solid fa-phone"></i> (571) 259-8107</a>
+        <a href="#quote" class="btn btn-primary btn-sm">Free quote</a>
+        <a href="tel:+15712598107" class="icon-call" aria-label="Call Rewired"><i class="fa-solid fa-phone"></i></a>
+        <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
       </div>
-      <nav class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#issues">Problems We Fix</a>
-        <a href="#quote">Get a Quote</a>
-        <a href="links.html"><i class="fa-solid fa-star"></i> Links & Reviews</a>
-        <a href="#location">Service Area</a>
-        <a href="tel:5712598107" class="cta-btn"><i class="fa-solid fa-phone"></i> (571) 259-8107</a>
-      </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="express-badge">
-        <i class="fa-solid fa-bolt"></i> Fast & Reliable Mobile Tech Service
-      </div>
-      <h1>Mobile Phone Repair in <span>Alexandria, VA</span></h1>
-      <p>Rewired provides convenient on-site iPhone, Samsung, and Android phone repairs in Alexandria and the greater DMV area. From screen and battery replacements to back glass, charging port, and camera repairs, we come to your home or workplace. Contact us for a free quote.</p>
-      <div class="hero-buttons">
-        <a href="#quote" class="cta-btn"><i class="fa-regular fa-comment-dots"></i> Request a Free Quote</a>
-        <a href="tel:5712598107" class="btn-secondary"><i class="fa-solid fa-mobile-screen"></i> Call Us Now</a>
-      </div>
-    </div>
-  </section>
+  <main id="top">
 
-  <!-- Quick Info Bar -->
-  <div class="info-bar">
-    <div class="info-bar-container">
-      <div class="info-item">
-        <i class="fa-solid fa-award"></i> 60-Day Repair Warranty
-      </div>
-      <div class="info-item">
-        <i class="fa-solid fa-truck-fast"></i> On-Site Service
-      </div>
-      <div class="info-item">
-        <i class="fa-solid fa-comments-dollar"></i> Free Upfront Quotes
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Services Section -->
-  <section id="services">
-    <div class="services-container">
-      <div class="section-title">
-        <h2>Our Core Services</h2>
-        <p>Professional tech repair solutions focused entirely on convenience and quality.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Phone Repair -->
-        <div class="service-card highlighted-card">
-          <div class="card-badge">Most Popular</div>
-          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-          <h3>Phone Repairs</h3>
-          <p class="desc">Expert diagnosis and repair for iPhone, Samsung, and other leading Android models right where you are.</p>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Screen Replacements</li>
-            <li><i class="fa-solid fa-check"></i> Battery Swaps</li>
-            <li><i class="fa-solid fa-check"></i> Charging Port Repairs</li>
-            <li><i class="fa-solid fa-check"></i> Back Glass Replacement</li>
-            <li><i class="fa-solid fa-check"></i> Camera & Lens Repair</li>
+    <!-- ===== Hero ===== -->
+    <section class="hero" style="padding:0">
+      <div class="wrap">
+        <div>
+          <div class="eyebrow"><i class="fa-solid fa-location-dot"></i> Mobile repair in Alexandria, VA &amp; the DMV</div>
+          <h1>Phone repair that <em>comes to you.</em></h1>
+          <p class="lead">Cracked screen, dying battery or a phone that won't charge? We bring the repair bench to your home, office or favorite coffee shop, so you don't have to drop off your phone or wait in a store.</p>
+          <div class="hero-actions">
+            <a href="#quote" class="btn btn-primary"><i class="fa-regular fa-comment-dots"></i> Get a free quote</a>
+            <a href="sms:+15712598107" class="btn btn-ghost"><i class="fa-solid fa-message"></i> Text (571) 259-8107</a>
+          </div>
+          <ul class="hero-trust">
+            <li><i class="fa-solid fa-shield-halved"></i>60-day warranty</li>
+            <li><i class="fa-solid fa-tag"></i>Upfront pricing</li>
+            <li><i class="fa-solid fa-moon"></i>Open until 10 PM</li>
           </ul>
         </div>
 
-        <!-- Laptop Repair -->
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-laptop"></i></div>
-          <h3>Laptop Repairs</h3>
-          <p class="desc">Laptop repair and hardware service for supported Windows laptops and Apple MacBook models.</p>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Screen Replacements</li>
-            <li><i class="fa-solid fa-check"></i> Battery Upgrades</li>
-            <li><i class="fa-solid fa-check"></i> Keyboard Replacements</li>
-            <li><i class="fa-solid fa-check"></i> Hard Drive/SSD Upgrades</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Common Issues Grid -->
-  <section id="issues" class="issues-section">
-    <div class="section-title">
-      <h2>Common Phone Repair Problems We Fix</h2>
-    </div>
-    <div class="issues-grid">
-      <div class="issue-item">
-        <i class="fa-solid fa-mobile-screen-button"></i>
-        <div>
-          <h4>Cracked Screens</h4>
-          <p>Need iPhone screen repair in Alexandria, VA? We replace damaged OLED and LCD phone screens with quality replacement parts.</p>
-        </div>
-      </div>
-      <div class="issue-item">
-        <i class="fa-solid fa-battery-quarter"></i>
-        <div>
-          <h4>Battery Draining Fast</h4>
-          <p>Our phone battery replacement service helps iPhone and Samsung users with batteries that drain quickly or no longer hold a charge.</p>
-        </div>
-      </div>
-      <div class="issue-item">
-        <i class="fa-solid fa-plug-circle-xmark"></i>
-        <div>
-          <h4>Not Charging</h4>
-          <p>We diagnose charging problems and clean, repair, or replace damaged charging ports on supported phones and laptops.</p>
-        </div>
-      </div>
-      <div class="issue-item">
-        <i class="fa-solid fa-camera-rotate"></i>
-        <div>
-          <h4>Broken Cameras</h4>
-          <p>We help repair phone camera problems, including blurry photos and damaged front or rear camera lenses.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tech Assistance Banner -->
-  <section class="software-section">
-    <div class="software-content">
-      <h3>On-Site Phone Repair and Tech Assistance</h3>
-      <p>Looking for mobile phone repair near Alexandria, VA? Rewired offers on-site iPhone and Samsung repairs, plus supported laptop repairs and device setup. Ask us about data transfers, software installation, and general tech troubleshooting.</p>
-      <a href="#quote" class="btn-secondary">Ask About Tech Setup Help</a>
-    </div>
-  </section>
-
-  <!-- Quote Request Form -->
-  <section id="quote" class="quote-section">
-    <div class="quote-container">
-      <div class="section-title">
-        <h2>Get a Free Estimate</h2>
-        <p>Tell us about your device and what's wrong. We'll get back to you with pricing fast.</p>
-      </div>
-
-      <div class="quote-form-card">
-        <form id="quote-form" action="https://formspree.io/f/xaqrroaa" method="POST">
-          <div class="form-grid">
-            
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+        <!-- Decorative phone illustration -->
+        <div class="phone-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="notch"></div>
+              <div class="chat-head">
+                <img src="mark.png" alt="">
+                <div><b>Rewired</b><small>● Mobile repair · DMV</small></div>
+              </div>
+              <div class="bubble me">Hi! My iPhone screen cracked. Can you come to me today?</div>
+              <div class="bubble them">Yes, we can come to you this evening. What model is it? We'll text you a free quote before any work starts.</div>
+              <div class="bubble me">iPhone 13. I'm at home in Alexandria.</div>
+              <div class="bubble them">Perfect. See you tonight! 👍</div>
             </div>
+          </div>
+          <div class="float-card fc-1"><i class="fa-solid fa-shield-halved"></i><div>60-day warranty<small>Parts &amp; labor</small></div></div>
+          <div class="float-card fc-2"><i class="fa-solid fa-van-shuttle"></i><div>On-site service<small>Home · office · café</small></div></div>
+        </div>
+      </div>
+    </section>
 
-            <div class="form-group">
-              <label for="contact">Phone or Email *</label>
-              <input type="text" id="contact" name="contact" placeholder="(555) 555-5555 or email@example.com" required>
+    <!-- ===== How it works ===== -->
+    <section id="how">
+      <div class="wrap">
+        <div class="head">
+          <div class="kicker">How it works</div>
+          <h2>Get your phone fixed in 3 easy steps</h2>
+          <p>No store visit and no leaving your phone behind for days.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="ic"><i class="fa-regular fa-comment-dots"></i></div>
+            <h3>Tell us what's wrong</h3>
+            <p>Call, text or fill out the quote form with your device model and the problem.</p>
+          </div>
+          <div class="step">
+            <div class="ic"><i class="fa-solid fa-tag"></i></div>
+            <h3>Get a free, upfront quote</h3>
+            <p>We give you a clear price before any work begins. No hidden fees or surprise charges.</p>
+          </div>
+          <div class="step">
+            <div class="ic"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>We fix it where you are</h3>
+            <p>A technician comes to you, repairs your device on-site, and backs the work with a 60-day warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section id="services" class="alt">
+      <div class="wrap">
+        <div class="head">
+          <div class="kicker">Services</div>
+          <h2>What we repair</h2>
+          <p>Professional repairs for phones and laptops, done on-site with quality parts.</p>
+        </div>
+        <div class="services">
+          <div class="card featured">
+            <span class="tag">Most popular</span>
+            <i class="ic fa-solid fa-mobile-screen-button"></i>
+            <h3>Phone repair</h3>
+            <p>iPhone, Samsung Galaxy and other Android phones, diagnosed and repaired right where you are.</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i>Screen replacement</li>
+              <li><i class="fa-solid fa-check"></i>Battery replacement</li>
+              <li><i class="fa-solid fa-check"></i>Charging port repair</li>
+              <li><i class="fa-solid fa-check"></i>Back glass replacement</li>
+              <li><i class="fa-solid fa-check"></i>Camera &amp; lens repair</li>
+            </ul>
+            <a href="#quote" class="more">Get a phone repair quote →</a>
+          </div>
+          <div class="card">
+            <i class="ic fa-solid fa-laptop"></i>
+            <h3>Laptop repair</h3>
+            <p>Hardware service for supported Windows laptops and Apple MacBook models.</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i>Screen replacement</li>
+              <li><i class="fa-solid fa-check"></i>Battery upgrades</li>
+              <li><i class="fa-solid fa-check"></i>Keyboard replacement</li>
+              <li><i class="fa-solid fa-check"></i>Hard drive / SSD upgrades</li>
+            </ul>
+            <a href="#quote" class="more">Get a laptop quote →</a>
+          </div>
+          <div class="card">
+            <i class="ic fa-solid fa-wand-magic-sparkles"></i>
+            <h3>Tech setup &amp; help</h3>
+            <p>Got a new device, or is something just not working right? We can help with that too.</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i>New phone setup</li>
+              <li><i class="fa-solid fa-check"></i>Data transfers</li>
+              <li><i class="fa-solid fa-check"></i>Software installation</li>
+              <li><i class="fa-solid fa-check"></i>General troubleshooting</li>
+            </ul>
+            <a href="#quote" class="more">Ask about tech help →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Problems ===== -->
+    <section id="problems">
+      <div class="wrap">
+        <div class="head">
+          <div class="kicker">Common problems</div>
+          <h2>Common phone problems we fix</h2>
+        </div>
+        <div class="problems">
+          <div class="problem"><i class="fa-solid fa-mobile-screen-button"></i><div><h3>Cracked or black screen</h3><p>Need iPhone screen repair in Alexandria, VA? We replace damaged OLED and LCD screens with quality parts.</p></div></div>
+          <div class="problem"><i class="fa-solid fa-battery-quarter"></i><div><h3>Battery drains fast</h3><p>A new battery for iPhone and Samsung phones that die quickly or won't hold a charge.</p></div></div>
+          <div class="problem"><i class="fa-solid fa-plug-circle-xmark"></i><div><h3>Won't charge</h3><p>We diagnose charging problems, then clean, repair or replace the charging port.</p></div></div>
+          <div class="problem"><i class="fa-solid fa-camera-rotate"></i><div><h3>Blurry or broken camera</h3><p>We fix front and rear camera problems, including cracked lenses and blurry photos.</p></div></div>
+          <div class="problem"><i class="fa-solid fa-mobile"></i><div><h3>Shattered back glass</h3><p>We replace cracked back glass so your phone looks good again and the glass stops spreading cracks.</p></div></div>
+          <div class="problem"><i class="fa-solid fa-circle-question"></i><div><h3>Not sure what's wrong?</h3><p>Just call or text us. We'll help figure out the problem and point you in the right direction.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why us ===== -->
+    <section class="alt">
+      <div class="wrap">
+        <div class="head">
+          <div class="kicker">Why Rewired</div>
+          <h2>Repairs done right, without the hassle</h2>
+        </div>
+        <div class="why">
+          <div><i class="fa-solid fa-van-shuttle"></i><h3>We come to you</h3><p>Home, office or coffee shop. You don't have to drive anywhere or wait around in a store.</p></div>
+          <div><i class="fa-solid fa-shield-halved"></i><h3>60-day warranty</h3><p>All parts and labor are covered against defects for 60 days. We stand by our work.</p></div>
+          <div><i class="fa-solid fa-tag"></i><h3>Transparent pricing</h3><p>You get a clear, honest quote before we start. No hidden fees.</p></div>
+          <div><i class="fa-solid fa-microchip"></i><h3>Quality parts</h3><p>We use the best replacement parts available so your device works properly and safely.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="reviews">
+      <div class="wrap">
+        <div>
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <h2>See what our customers say</h2>
+          <p>Read our reviews on Google and Yelp. Already had a repair with us? We'd love your feedback.</p>
+        </div>
+        <div class="btns">
+          <a href="https://share.google/SYTsAWsqRzFcuEiUQ" target="_blank" rel="noopener" class="btn btn-light"><i class="fa-brands fa-google"></i> Google reviews</a>
+          <a href="https://yelp.to/4mcOT0sr" target="_blank" rel="noopener" class="btn btn-light"><i class="fa-brands fa-yelp"></i> Yelp</a>
+          <a href="https://g.page/r/CecSfchDYB-EEAE/review" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-regular fa-star"></i> Leave a review</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Quote ===== -->
+    <section id="quote">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <div class="kicker">Free quote</div>
+          <h2>Tell us what's wrong and we'll send you a price.</h2>
+          <p>Fill out the form and we'll get back to you quickly with a price. If you'd rather talk, call or text us.</p>
+          <a class="contact-opt" href="tel:+15712598107"><i class="fa-solid fa-phone"></i><div><b>Call (571) 259-8107</b><small>Talk to a technician</small></div></a>
+          <a class="contact-opt" href="sms:+15712598107"><i class="fa-solid fa-message"></i><div><b>Text us</b><small>Send a photo of the damage</small></div></a>
+          <a class="contact-opt" href="mailto:support.rewired@gmail.com"><i class="fa-solid fa-envelope"></i><div><b>support.rewired@gmail.com</b><small>Email us anytime</small></div></a>
+        </div>
+
+        <form class="quote" id="quote-form" action="https://formspree.io/f/xaqrroaa" method="POST">
+          <input type="hidden" name="_subject" value="New repair quote request – rewiredwireless.com">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="fgrid">
+            <div class="field">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
             </div>
-
-            <div class="form-group">
-              <label for="device-type">Device Type *</label>
+            <div class="field">
+              <label for="contact">Phone or email *</label>
+              <input type="text" id="contact" name="contact" autocomplete="tel" placeholder="(571) 555-0123" required>
+            </div>
+            <div class="field">
+              <label for="device-type">Device *</label>
               <select id="device-type" name="device_type" required>
-                <option value="" disabled selected>Select device type...</option>
+                <option value="" disabled selected>Select device…</option>
                 <option value="iPhone">Apple iPhone</option>
                 <option value="Samsung">Samsung Galaxy</option>
-                <option value="Other Android">Other Android Phone</option>
+                <option value="Other Android">Other Android phone</option>
                 <option value="MacBook">Apple MacBook</option>
-                <option value="Windows Laptop">Windows Laptop</option>
-                <option value="Other">Other Device</option>
+                <option value="Windows Laptop">Windows laptop</option>
+                <option value="Other">Other device</option>
               </select>
             </div>
-
-            <div class="form-group">
-              <label for="device-model">Device Model (If known)</label>
-              <input type="text" id="device-model" name="device_model" placeholder="e.g. iPhone 13 Pro, Galaxy S22">
+            <div class="field">
+              <label for="device-model">Model (if known)</label>
+              <input type="text" id="device-model" name="device_model" placeholder="e.g. iPhone 13 Pro">
             </div>
-
-            <div class="form-group full-width">
-              <label for="repair-issue">What seems to be the problem? *</label>
+            <div class="field full">
+              <label for="repair-issue">What's the problem? *</label>
               <select id="repair-issue" name="repair_issue" required>
-                <option value="" disabled selected>Select primary issue...</option>
-                <option value="Cracked Screen">Cracked/Broken Screen</option>
-                <option value="Battery Replacement">Battery Replacement</option>
-                <option value="Charging Port">Won't Charge / Charging Port</option>
-                <option value="Camera Issue">Camera Issue</option>
-                <option value="Other">Other (Please describe below)</option>
+                <option value="" disabled selected>Select the main issue…</option>
+                <option value="Cracked Screen">Cracked / broken screen</option>
+                <option value="Battery Replacement">Battery drains fast / replacement</option>
+                <option value="Charging Port">Won't charge / charging port</option>
+                <option value="Back Glass">Cracked back glass</option>
+                <option value="Camera Issue">Camera issue</option>
+                <option value="Laptop Repair">Laptop repair</option>
+                <option value="Tech Setup">Tech setup / data transfer</option>
+                <option value="Other">Other (describe below)</option>
               </select>
             </div>
-
-            <div class="form-group full-width" id="other-issue-container" style="display: none;">
-              <label for="other-issue-desc">Please Describe the Issue *</label>
-              <textarea id="other-issue-desc" name="other_issue_desc" rows="3" placeholder="Tell us exactly what's happening..."></textarea>
+            <div class="field">
+              <label for="location">City or ZIP *</label>
+              <input type="text" id="location" name="location" autocomplete="postal-code" placeholder="e.g. Alexandria 22314" required>
             </div>
-
-            <div class="form-group full-width">
-              <label for="details">Any additional details?</label>
-              <textarea id="details" name="details" rows="2" placeholder="Optional notes..."></textarea>
+            <div class="field">
+              <label for="when">When works for you?</label>
+              <select id="when" name="preferred_time">
+                <option value="As soon as possible">As soon as possible</option>
+                <option value="Today">Today</option>
+                <option value="Tomorrow">Tomorrow</option>
+                <option value="This week">Later this week</option>
+              </select>
             </div>
-
+            <div class="field full">
+              <label for="details">Anything else we should know?</label>
+              <textarea id="details" name="details" rows="3" placeholder="Describe the problem (required if you picked “Other”)"></textarea>
+            </div>
           </div>
-
-          <div class="form-submit">
-            <button type="submit" id="submit-btn" class="cta-btn submit-btn"><i class="fa-solid fa-paper-plane"></i> Submit Request</button>
-          </div>
-
-          <!-- Status message area -->
-          <div id="form-status" class="form-status" style="display: none;"></div>
+          <button type="submit" id="submit-btn" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get my free quote</button>
+          <p class="fine">Free and no obligation. We only use your info to reply about your repair.</p>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Why Choose Us -->
-  <section id="why-us">
-    <div class="section-title">
-      <h2>Why Choose Rewired Tech Services?</h2>
-    </div>
-    <div class="features-container">
-      <div class="feature-box">
-        <h3><i class="fa-solid fa-shield-halved"></i> 60-Day Warranty</h3>
-        <p>We stand by our work. All of our parts installed and labor come with a full 60-day warranty that covers defects.</p>
-      </div>
-      <div class="feature-box">
-        <h3><i class="fa-solid fa-money-bill-wave"></i> Transparent Pricing</h3>
-        <p>No hidden fees or surprise charges. We give you a clear, honest quote before any work begins.</p>
-      </div>
-      <div class="feature-box">
-        <h3><i class="fa-solid fa-microchip"></i> High Quality Parts</h3>
-        <p>We source the best available replacement parts to ensure your device functions perfectly and safely.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Extra Call to Action Banner -->
-  <div class="extra-banner">
-    <div class="extra-banner-container">
-      <h3>Not Sure What's Wrong?</h3>
-      <p>If your device is acting up and you aren't sure why, just give us a call. We can help diagnose the issue and point you in the right direction.</p>
-      <a href="tel:5712598107" class="cta-btn"><i class="fa-solid fa-phone"></i> Call (571) 259-8107</a>
-    </div>
-  </div>
-
-  <!-- Google Reviews Section -->
-  <section class="reviews-section">
-    <div class="reviews-container">
-      <h2>Check Out Our Links & Reviews!</h2>
-      <p>We pride ourselves on 5-star service. Leave a review or check out our full links hub.</p>
-      <a href="links.html" class="btn-secondary"><i class="fa-solid fa-star"></i> View Links & Reviews Page</a>
-    </div>
-  </section>
-
-  <!-- Location & Map -->
-  <section id="location" class="location-section">
-    <div class="location-container">
-      <div class="section-title">
-        <h2>Service Area</h2>
-      </div>
-      <div class="location-grid">
-        <div class="location-details">
-          <h3>On-Site Mobile Repair Vehicle</h3>
-          <p><i class="fa-solid fa-map-location-dot"></i> Mobile phone repair in Alexandria, VA and the greater DMV area. We travel to your location for convenient on-site service.</p>
-          <p><i class="fa-solid fa-phone"></i> (571) 259-8107</p>
-          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:support.rewired@gmail.com">support.rewired@gmail.com</a></p>
-          <br>
-          <h4>Service Hours</h4>
-          <p><i class="fa-regular fa-clock"></i> Monday - Friday: 08:00 AM - 10:00 PM</p>
-          <p><i class="fa-regular fa-clock"></i> Saturday: 12:00 PM - 10:00 PM</p>
-          <p><i class="fa-regular fa-clock"></i> Sunday: 04:00 PM - 10:00 PM</p>
-          <br>
-          <p style="font-size: 0.9rem; margin-top: 15px;">
-            <strong>Need urgent help?</strong><br>
-            Give us a call and we'll do our best to accommodate emergency repair requests. We bring the repair bench right to your home, office, or favorite coffee shop so you're never inconvenienced.
-          </p>
+    <!-- ===== Latest phone tips (add a card here when you publish a new article; keep the newest 3) ===== -->
+    <section id="tips">
+      <div class="wrap">
+        <div class="head">
+          <div class="kicker">Phone tips</div>
+          <h2>Helpful guides from our technicians</h2>
+          <p>Quick fixes you can try yourself, and how to tell when it's time for a repair.</p>
         </div>
-        
-        <!-- Map Container -->
-        <div class="map-container">
-          <iframe 
-            src="https://maps.google.com/maps?q=Alexandria,%20VA&t=&z=10&ie=UTF8&iwloc=&output=embed" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <div class="tips">
+          <a class="tip" href="blog/apple-store-vs-independent-vs-mobile-repair.html">
+            <span class="cat">Repair advice</span>
+            <h3>Apple Store vs. independent repair vs. mobile repair: which is best?</h3>
+            <p>An honest look at price, parts, time and convenience, so you can pick what fits you.</p>
+            <span class="read">Read article →</span>
+          </a>
+          <a class="tip" href="blog/black-screen-phone-still-on.html">
+            <span class="cat">Screen problems</span>
+            <h3>Black screen but the phone is still on: is it the screen?</h3>
+            <p>Quick fixes, the flashlight test, and how to tell if you need a new screen.</p>
+            <span class="read">Read article →</span>
+          </a>
+          <a class="tip" href="blog/iphone-lcd-vs-oled-screen-replacement.html">
+            <span class="cat">Screen repair</span>
+            <h3>iPhone screen replacement: LCD vs OLED, which should you choose?</h3>
+            <p>Why screen quotes differ so much, and how to pick the right screen.</p>
+            <span class="read">Read article →</span>
+          </a>
+        </div>
+        <p style="text-align:center;margin-top:30px"><a href="blog/" class="btn btn-outline">See all phone tips</a></p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="alt">
+      <div class="wrap">
+        <div class="head">
+          <div class="kicker">FAQ</div>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Do you really come to me?</summary>
+            <p>Yes. We're a fully mobile repair service. We come to your home, office or favorite coffee shop anywhere in Alexandria and the greater DMV area, and repair your device on-site.</p>
+          </details>
+          <details>
+            <summary>How much will my repair cost?</summary>
+            <p>It depends on your device and what needs fixing. Send us your model and the problem, and we'll give you a free, upfront quote before any work begins. There are no hidden fees or surprise charges.</p>
+          </details>
+          <details>
+            <summary>Is there a warranty?</summary>
+            <p>Yes. All parts we install and our labor are covered by a 60-day warranty against defects.</p>
+          </details>
+          <details>
+            <summary>Which devices do you repair?</summary>
+            <p>iPhone, Samsung Galaxy and other Android phones, plus supported Windows laptops and Apple MacBooks. If you're not sure we can fix yours, just ask.</p>
+          </details>
+          <details>
+            <summary>What are your hours? Do you do same-day repairs?</summary>
+            <p>Monday–Friday 8 AM–10 PM, Saturday 12–10 PM, and Sunday 4–10 PM. For urgent repairs, call us and we'll do our best to fit you in.</p>
+          </details>
+          <details>
+            <summary>Will I lose my data?</summary>
+            <p>Hardware repairs like screen and battery replacements usually don't affect your data. Still, we always recommend backing up your phone before any repair, just in case.</p>
+          </details>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <!-- ===== Service area ===== -->
+    <section id="area">
+      <div class="wrap area-grid">
+        <div class="area-info">
+          <div class="kicker">Service area</div>
+          <h2>Serving Alexandria and the greater DMV</h2>
+          <p>We drive to you. If you're not sure whether we cover your area, call or text us.</p>
+          <!-- EDIT THIS LIST to match the places you actually go -->
+          <div class="chips">
+            <span>Alexandria</span><span>Arlington</span><span>Springfield</span><span>Falls Church</span><span>Fairfax</span><span>Washington, DC</span>
+          </div>
+          <table class="hours" id="hours">
+            <tr data-days="1,2,3,4,5"><td>Monday – Friday</td><td>8:00 AM – 10:00 PM</td></tr>
+            <tr data-days="6"><td>Saturday</td><td>12:00 PM – 10:00 PM</td></tr>
+            <tr data-days="0"><td>Sunday</td><td>4:00 PM – 10:00 PM</td></tr>
+          </table>
+          <a href="tel:+15712598107" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call (571) 259-8107</a>
+        </div>
+        <div class="map">
+          <iframe title="Map of Rewired's service area around Alexandria, VA" src="https://maps.google.com/maps?q=Alexandria,%20VA&t=&z=10&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Final CTA ===== -->
+    <section class="final">
+      <div class="wrap">
+        <h2>Broken phone? We'll come to you.</h2>
+        <p>Get a free quote today. Evening and weekend appointments are available.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-primary"><i class="fa-regular fa-comment-dots"></i> Get a free quote</a>
+          <a href="tel:+15712598107" class="btn btn-ghost"><i class="fa-solid fa-phone"></i> (571) 259-8107</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
   <footer>
-    <p>&copy; 2026 Rewired Tech Services. All rights reserved.</p>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <a href="#top" class="brand"><img src="mark-white.png" alt="" width="45" height="40"><span>REWIRED</span></a>
+          <p>On-site phone and laptop repair in Alexandria, VA and the greater DMV area. 60-day warranty on parts and labor.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+15712598107"><i class="fa-solid fa-phone"></i>&nbsp; (571) 259-8107</a></li>
+            <li><a href="sms:+15712598107"><i class="fa-solid fa-message"></i>&nbsp; Text us</a></li>
+            <li><a href="mailto:support.rewired@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp; support.rewired@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#quote">Free quote</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="blog/">Phone tips</a></li>
+            <li><a href="links.html">Reviews &amp; links</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">© <span id="year">2026</span> Rewired Tech Services · Alexandria, VA</div>
+    </div>
   </footer>
 
-  <!-- Fixed Sticky Mobile Call Button -->
-  <a href="tel:5712598107" class="mobile-call-bar">
-    <i class="fa-solid fa-phone"></i> Call Now: (571) 259-8107
-  </a>
+  <!-- ===== Mobile action bar ===== -->
+  <nav class="mbar" aria-label="Quick contact">
+    <a href="tel:+15712598107"><i class="fa-solid fa-phone"></i> Call</a>
+    <a href="sms:+15712598107"><i class="fa-solid fa-message"></i> Text</a>
+    <a href="#quote" class="primary"><i class="fa-regular fa-comment-dots"></i> Free quote</a>
+  </nav>
 
-  <!-- JavaScript for Form Logic -->
   <script>
-    const repairIssueSelect = document.getElementById('repair-issue');
-    const otherIssueContainer = document.getElementById('other-issue-container');
-    const otherIssueDesc = document.getElementById('other-issue-desc');
-
-    repairIssueSelect.addEventListener('change', function() {
-      if (this.value === 'Other') {
-        otherIssueContainer.style.display = 'block';
-        otherIssueDesc.setAttribute('required', 'required');
-      } else {
-        otherIssueContainer.style.display = 'none';
-        otherIssueDesc.removeAttribute('required');
-      }
+    // Mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    menuBtn.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open);
+      menuBtn.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
     });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', false);
+      menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }));
 
-    const quoteForm = document.getElementById('quote-form');
-    const formStatus = document.getElementById('form-status');
+    // "Open now" status and today's hours, using Alexandria (Eastern) time
+    (function () {
+      const hours = { 0: [16, 22], 1: [8, 22], 2: [8, 22], 3: [8, 22], 4: [8, 22], 5: [8, 22], 6: [12, 22] };
+      const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', hour12: false }).formatToParts(new Date());
+      const dayName = parts.find(p => p.type === 'weekday').value;
+      const day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(dayName);
+      const hour = parseInt(parts.find(p => p.type === 'hour').value, 10) % 24;
+      const [open, close] = hours[day];
+      const fmt = h => (h % 12 || 12) + (h < 12 ? ' AM' : ' PM');
+      const dot = document.getElementById('status-dot');
+      const text = document.getElementById('status-text');
+      if (hour >= open && hour < close) {
+        dot.classList.add('open');
+        text.textContent = 'Open now · until ' + fmt(close) + ' today';
+      } else if (hour < open) {
+        text.textContent = 'Closed now · opens at ' + fmt(open) + ' today';
+      } else {
+        const next = hours[(day + 1) % 7][0];
+        text.textContent = 'Closed now · opens tomorrow at ' + fmt(next);
+      }
+      document.querySelectorAll('#hours tr').forEach(tr => {
+        if (tr.dataset.days.split(',').map(Number).includes(day)) tr.classList.add('today');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+
+    // Quote form: "Other" needs a description, then send to Formspree without leaving the page
+    const form = document.getElementById('quote-form');
+    const issue = document.getElementById('repair-issue');
+    const details = document.getElementById('details');
+    const statusBox = document.getElementById('form-status');
     const submitBtn = document.getElementById('submit-btn');
+    issue.addEventListener('change', () => { details.required = issue.value === 'Other'; });
 
-    quoteForm.addEventListener('submit', async function(event) {
-      event.preventDefault();
-      
-      const formData = new FormData(quoteForm);
-      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
       submitBtn.disabled = true;
-
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
+      statusBox.className = 'form-status';
       try {
-        const response = await fetch(quoteForm.action, {
-          method: quoteForm.method,
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
-
-        if (response.ok) {
-          formStatus.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your request has been sent. We will get back to you shortly.';
-          formStatus.className = 'form-status success';
-          formStatus.style.display = 'block';
-          quoteForm.reset();
-          otherIssueContainer.style.display = 'none';
-        } else {
-          formStatus.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> Oops! There was a problem submitting your form. Please try again.';
-          formStatus.className = 'form-status error';
-          formStatus.style.display = 'block';
-        }
-      } catch (error) {
-        formStatus.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> Oops! There was a network problem submitting your form.';
-        formStatus.className = 'form-status error';
-        formStatus.style.display = 'block';
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        if (!res.ok) throw new Error('bad response');
+        statusBox.className = 'form-status success';
+        statusBox.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thanks! Your request was sent. We\'ll get back to you shortly with your quote.';
+        form.reset();
+      } catch (err) {
+        statusBox.className = 'form-status error';
+        statusBox.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> Something went wrong. Please call or text us at (571) 259-8107.';
       } finally {
-        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Submit Request';
         submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Get my free quote';
       }
     });
   </script>
