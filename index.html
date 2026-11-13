@@ -38,12 +38,22 @@
     "address": { "@type": "PostalAddress", "addressLocality": "Alexandria", "addressRegion": "VA", "addressCountry": "US" },
     "areaServed": [
       { "@type": "City", "name": "Alexandria, VA" },
-      { "@type": "AdministrativeArea", "name": "Washington, DC metropolitan area" }
+      { "@type": "City", "name": "Washington, DC" },
+      { "@type": "City", "name": "Arlington, VA" },
+      { "@type": "City", "name": "Falls Church, VA" },
+      { "@type": "City", "name": "Annandale, VA" },
+      { "@type": "City", "name": "Fairfax, VA" },
+      { "@type": "City", "name": "Burke, VA" },
+      { "@type": "City", "name": "Springfield, VA" },
+      { "@type": "City", "name": "Mount Vernon, VA" },
+      { "@type": "City", "name": "Lorton, VA" },
+      { "@type": "City", "name": "Woodbridge, VA" },
+      { "@type": "City", "name": "National Harbor, MD" },
+      { "@type": "City", "name": "Oxon Hill, MD" },
+      { "@type": "City", "name": "Forest Heights, MD" }
     ],
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "22:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "22:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "16:00", "closes": "22:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "07:00", "closes": "22:00" }
     ],
     "sameAs": [
       "https://yelp.to/4mcOT0sr",
@@ -338,7 +348,7 @@
   <!-- ===== Top bar ===== -->
   <div class="topbar">
     <div class="wrap">
-      <span class="status"><span class="dot" id="status-dot"></span><span id="status-text">Evenings &amp; weekends available</span></span>
+      <span class="status"><span class="dot" id="status-dot"></span><span id="status-text">Open 7 days · 7 AM – 10 PM</span></span>
       <span class="hide-sm"><i class="fa-solid fa-van-shuttle"></i> We come to your home, office or coffee shop</span>
     </div>
   </div>
@@ -382,7 +392,7 @@
           <ul class="hero-trust">
             <li><i class="fa-solid fa-shield-halved"></i>60-day warranty</li>
             <li><i class="fa-solid fa-tag"></i>Upfront pricing</li>
-            <li><i class="fa-solid fa-moon"></i>Open until 10 PM</li>
+            <li><i class="fa-regular fa-clock"></i>Open 7 days, 7 AM–10 PM</li>
           </ul>
         </div>
 
@@ -657,7 +667,7 @@
         <div class="faq">
           <details open>
             <summary>Do you really come to me?</summary>
-            <p>Yes. We're a fully mobile repair service. We come to your home, office or favorite coffee shop anywhere in Alexandria and the greater DMV area, and repair your device on-site.</p>
+            <p>Yes. We're a fully mobile repair service. We come to your home, office or favorite coffee shop, anywhere from Washington, DC to Woodbridge, VA and from Fairfax, VA to Oxon Hill, MD, and repair your device on-site.</p>
           </details>
           <details>
             <summary>How much will my repair cost?</summary>
@@ -673,7 +683,7 @@
           </details>
           <details>
             <summary>What are your hours? Do you do same-day repairs?</summary>
-            <p>Monday–Friday 8 AM–10 PM, Saturday 12–10 PM, and Sunday 4–10 PM. For urgent repairs, call us and we'll do our best to fit you in.</p>
+            <p>We're available 7 days a week, 7 AM–10 PM, including weekends. For urgent repairs, call us and we'll do our best to fit you in the same day.</p>
           </details>
           <details>
             <summary>Will I lose my data?</summary>
@@ -689,15 +699,13 @@
         <div class="area-info">
           <div class="kicker">Service area</div>
           <h2>Serving Alexandria and the greater DMV</h2>
-          <p>We drive to you. If you're not sure whether we cover your area, call or text us.</p>
+          <p>We cover everything from Washington, DC down to Woodbridge, VA, and from Fairfax, VA across to Oxon Hill, MD. We drive to you. Not sure if we cover your area? Call or text us.</p>
           <!-- EDIT THIS LIST to match the places you actually go -->
           <div class="chips">
-            <span>Alexandria</span><span>Arlington</span><span>Springfield</span><span>Falls Church</span><span>Fairfax</span><span>Washington, DC</span>
+            <span>Alexandria, VA</span><span>Washington, DC</span><span>Arlington, VA</span><span>Falls Church, VA</span><span>Annandale, VA</span><span>Fairfax, VA</span><span>Burke, VA</span><span>Springfield, VA</span><span>Mount Vernon, VA</span><span>Lorton, VA</span><span>Woodbridge, VA</span><span>National Harbor, MD</span><span>Oxon Hill, MD</span><span>Forest Heights, MD</span>
           </div>
           <table class="hours" id="hours">
-            <tr data-days="1,2,3,4,5"><td>Monday – Friday</td><td>8:00 AM – 10:00 PM</td></tr>
-            <tr data-days="6"><td>Saturday</td><td>12:00 PM – 10:00 PM</td></tr>
-            <tr data-days="0"><td>Sunday</td><td>4:00 PM – 10:00 PM</td></tr>
+            <tr data-days="0,1,2,3,4,5,6"><td>Monday – Sunday</td><td>7:00 AM – 10:00 PM</td></tr>
           </table>
           <a href="tel:+15712598107" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call (571) 259-8107</a>
         </div>
@@ -775,7 +783,7 @@
 
     // "Open now" status and today's hours, using Alexandria (Eastern) time
     (function () {
-      const hours = { 0: [16, 22], 1: [8, 22], 2: [8, 22], 3: [8, 22], 4: [8, 22], 5: [8, 22], 6: [12, 22] };
+      const hours = { 0: [7, 22], 1: [7, 22], 2: [7, 22], 3: [7, 22], 4: [7, 22], 5: [7, 22], 6: [7, 22] };
       const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', hour12: false }).formatToParts(new Date());
       const dayName = parts.find(p => p.type === 'weekday').value;
       const day = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(dayName);
