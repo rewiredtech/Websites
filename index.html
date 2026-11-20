@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>On-Site Phone Repair in Alexandria, VA | Rewired Tech Services</title>
-  <meta name="description" content="Rewired comes to you for iPhone, Samsung and Android repair in Alexandria, VA and the DMV. Screens, batteries, back glass, charging ports and cameras. Open evenings and weekends. 60-day warranty. Free quotes.">
+  <meta name="description" content="Rewired comes to you for iPhone, Samsung and Android repair in Alexandria, VA and the DMV. Screens, batteries, back glass, charging ports and cameras. Open 7 days. 60-day warranty. Free quotes. Hablamos español.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rewiredwireless.com/">
+  <!-- Language versions: tells Google the Spanish page is the same page in Spanish -->
+  <link rel="alternate" hreflang="en" href="https://rewiredwireless.com/">
+  <link rel="alternate" hreflang="es" href="https://rewiredwireless.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://rewiredwireless.com/">
   <meta name="theme-color" content="#0A0F2C">
 
   <!-- Icons shown in browser tabs, phone home screens and Google results -->
@@ -17,6 +21,8 @@
   <meta property="og:title" content="On-Site Phone Repair in Alexandria, VA | Rewired">
   <meta property="og:description" content="We come to your home, office or coffee shop. iPhone, Samsung & Android repair across the DMV. Free quotes, 60-day warranty.">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_US">
   <meta property="og:url" content="https://rewiredwireless.com/">
   <meta property="og:image" content="https://rewiredwireless.com/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -26,6 +32,7 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://rewiredwireless.com/#business",
     "name": "Rewired Tech Services",
     "alternateName": "Rewired",
     "description": "On-site iPhone, Samsung, Android and laptop repair in Alexandria, VA and the greater DMV area.",
@@ -35,6 +42,7 @@
     "telephone": "+1-571-259-8107",
     "email": "support.rewired@gmail.com",
     "priceRange": "$$",
+    "knowsLanguage": ["en", "es"],
     "address": { "@type": "PostalAddress", "addressLocality": "Alexandria", "addressRegion": "VA", "addressCountry": "US" },
     "areaServed": [
       { "@type": "City", "name": "Alexandria, VA" },
@@ -122,6 +130,10 @@
     .status { display: inline-flex; align-items: center; gap: 8px; }
     .dot { width: 8px; height: 8px; border-radius: 50%; background: #9AA3FF; }
     .dot.open { background: #4ADE80; box-shadow: 0 0 0 4px rgba(74,222,128,.25); }
+
+    .topbar .lang { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+    .topbar .lang:hover { text-decoration-thickness: 2px; }
+    .show-sm { display: none; }
 
     /* ---------- Header ---------- */
     header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
@@ -332,6 +344,8 @@
       form.quote { padding: 22px 18px; }
       .reviews .btns, .reviews .btns .btn { width: 100%; }
       .topbar .hide-sm { display: none; }
+      .topbar .show-sm { display: inline; }
+      .topbar .wrap { gap: 6px 12px; }
       .mbar {
         display: grid; grid-template-columns: 1fr 1fr 1.3fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 200;
         background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(10,15,44,.08);
@@ -350,6 +364,7 @@
     <div class="wrap">
       <span class="status"><span class="dot" id="status-dot"></span><span id="status-text">Open 7 days · 7 AM – 10 PM</span></span>
       <span class="hide-sm"><i class="fa-solid fa-van-shuttle"></i> We come to your home, office or coffee shop</span>
+      <a href="es/" class="lang" hreflang="es" lang="es"><span class="hide-sm">Hablamos español</span><span class="show-sm">Español</span></a>
     </div>
   </div>
 
@@ -366,6 +381,7 @@
         <li><a href="blog/">Phone tips</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#area">Service area</a></li>
+        <li><a href="es/" hreflang="es" lang="es"><i class="fa-solid fa-globe"></i> Español</a></li>
       </ul>
       <div class="nav-cta">
         <a href="tel:+15712598107" class="btn btn-outline btn-sm"><i class="fa-solid fa-phone"></i> (571) 259-8107</a>
@@ -686,6 +702,10 @@
             <p>We're available 7 days a week, 7 AM–10 PM, including weekends. For urgent repairs, call us and we'll do our best to fit you in the same day.</p>
           </details>
           <details>
+            <summary>Do you speak Spanish?</summary>
+            <p>Yes, hablamos español. You can call or text us in Spanish, and we'll help you in Spanish from start to finish. <a href="es/" hreflang="es" lang="es">Ver esta página en español</a>.</p>
+          </details>
+          <details>
             <summary>Will I lose my data?</summary>
             <p>Hardware repairs like screen and battery replacements usually don't affect your data. Still, we always recommend backing up your phone before any repair, just in case.</p>
           </details>
@@ -752,6 +772,7 @@
             <li><a href="#faq">FAQ</a></li>
             <li><a href="blog/">Phone tips</a></li>
             <li><a href="links.html">Reviews &amp; links</a></li>
+            <li><a href="es/" hreflang="es" lang="es">En español</a></li>
           </ul>
         </div>
       </div>
